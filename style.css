@@ -1,0 +1,408 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #9356DC;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.7;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader i {
+  animation: spin 0.5s infinite linear;
+  color: #99E2D0;
+  opacity: 1;
+}
+
+header {
+  font-family: "shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0px 3px 8px #959191;
+  padding: 15px 0px 10px 0px;
+  font-size: 130%;
+}
+
+header h1 {
+  margin-bottom: 2px;
+}
+
+.ville {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  background-color: #d3d6d2;
+  padding: 1px;
+  margin-top: 5px;
+  opacity: 0.7;
+  padding-right: 110px;
+  position: relative;
+}
+.ville i {
+  font-size: 130%;
+  position: absolute;
+  left: 27%;
+}
+.ville h2 {
+  font-size: 120%;
+  padding: 1% 0% 1% 30%;
+}
+
+.reservation {
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 85px;
+  background-color: rgba(229, 229, 229, 0.57);
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+p {
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+
+button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 20px 30px;
+  font-size: 20px;
+  margin: 5% 1% -3% 1%;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 5px 5px 10px 6px lightgrey;
+  transition: all 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.fonctionnement h2 {
+  padding-left: 25px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.fonctionnement ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-left: 10px;
+}
+.fonctionnement li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 500;
+  background-color: rgba(229, 229, 229, 0.57);
+  padding: 15px 30px;
+  flex-grow: 1;
+  border-radius: 25px;
+  min-width: 75%;
+  min-height: 40px;
+  box-shadow: 3px 4px 10px 1px lightgrey;
+  list-style-type: none;
+  position: relative;
+}
+.fonctionnement li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.5rem;
+  width: 0.5rem;
+  color: white;
+  background-color: #9356DC;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -40px;
+}
+.fonctionnement li:hover {
+  cursor: pointer;
+}
+.fonctionnement li:hover i {
+  color: #9356DC;
+}
+.fonctionnement i.fas {
+  margin-right: 50px;
+  margin-left: 15px;
+}
+
+.restaurants {
+  background-color: rgba(229, 229, 229, 0.57);
+  margin-top: 80px;
+}
+.restaurants h2 {
+  padding: 50px 0px 0px 20px;
+  font-size: 30px;
+}
+.restaurants h3 {
+  font-size: 130%;
+  margin: 10% 1% 5% 4%;
+}
+.restaurants .liste_carte {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 75px;
+}
+.restaurants article {
+  display: flex;
+  flex-direction: column;
+  border: 0px solid white;
+  margin: 0% 4% 0% 4%;
+  background-color: white;
+  border-radius: 15px;
+  height: 305px;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants span {
+  position: absolute;
+  margin-left: 71%;
+  margin-top: 5%;
+  color: #2d735c;
+  border: 0px solid;
+  background-color: #99e2d0;
+  font-size: 19px;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  height: 80%;
+  object-fit: cover;
+  margin-bottom: -30px;
+  position: relative;
+}
+
+div {
+  position: relative;
+}
+
+p {
+  margin: -4% 1% 3% 4%;
+  font-size: 125%;
+}
+
+.coeur {
+  position: absolute;
+  margin: -13% 1% 0% 88%;
+}
+
+.coeur:hover {
+  color: red;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  margin: -5% 0% -5% 0%;
+  padding-bottom: 10px;
+}
+footer h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 5% 1% 3% 6%;
+}
+footer p {
+  margin: -5% 1% 6% 7%;
+}
+footer .fa-utensils {
+  margin-right: 3.5%;
+}
+footer .fa-hands-helping {
+  margin-right: 2%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.menu1_header {
+  display: flex;
+  position: relative;
+  margin: -5% 0% 0% 0%;
+}
+.menu1_header h1 {
+  margin: 4% 0% 0% 24%;
+}
+
+.fas.fa-arrow-left {
+  position: absolute;
+  color: black;
+  left: 6%;
+  top: 50%;
+  font-size: 130%;
+}
+
+.image_menu img {
+  display: block;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+
+.menu1_main {
+  position: absolute;
+  width: 100%;
+  margin-top: -50px;
+  background-color: #f2f2f2;
+  border-radius: 45px 45px 0px 0px;
+}
+.menu1_main h2 {
+  font-family: "shrikhand", "sans-serif";
+  padding: 0% 1% 0% 5%;
+  font-size: 180%;
+}
+
+.menu_contenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.menu_contenu .options {
+  display: flex;
+  flex-direction: column;
+  margin: -1% 1% 1% 5%;
+}
+.menu_contenu .options h3 {
+  font-size: 140%;
+  font-weight: normal;
+  opacity: 0.8;
+  position: relative;
+}
+.menu_contenu .options h3::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  background-color: #99e2d0;
+  left: 0;
+  top: 30px;
+}
+.menu_contenu .les_choix {
+  display: flex;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  background-color: white;
+  margin: 0% 3% 4% 0%;
+  justify-content: space-between;
+  width: 95%;
+  height: 90px;
+  padding-top: 1%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 3px 4px 10px 1px lightgrey;
+  animation-name: décalage;
+  animation-duration: 3s;
+}
+@keyframes décalage {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+.menu_contenu .les_choix .détails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -3% 1% 1% 1%;
+}
+.menu_contenu .les_choix .détails span {
+  opacity: 0.9;
+  font-size: 140%;
+  margin: 6% -5% 4% 5%;
+}
+.menu_contenu .les_choix .détails p {
+  font-size: 112%;
+  font-weight: lighter;
+  opacity: 0.9;
+  margin: -1% 1% 2% 6%;
+}
+.menu_contenu .les_choix .coût {
+  display: flex;
+  align-items: center;
+  gap: 16%;
+  margin-right: -21%;
+  flex-basis: 30%;
+}
+.menu_contenu .les_choix .coût .prix {
+  margin: 10% 0% 1% -7%;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.menu_contenu .les_choix .coût .validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  height: 110%;
+  width: 70%;
+}
+.menu_contenu .les_choix .coût .validation .fa-check {
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5%;
+  font-size: 110%;
+}
+.menu_contenu .les_choix:hover .coût {
+  margin-right: 0%;
+  transition: all 1s;
+}
+.menu_contenu .commander {
+  margin: 0% 1% 17% 28%;
+}
+.menu_contenu .click {
+  padding: 5% 15% 5% 15%;
+}
+
+/*# sourceMappingURL=style.css.map */
