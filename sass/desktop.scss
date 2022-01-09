@@ -1,0 +1,98 @@
+@media (min-width : 1025px) {
+    
+    #bloc-page{
+
+        max-width:1400px;
+        margin:0 auto;
+     
+     }
+     header{
+         font-size: 200%;
+     }
+     .ville{
+         font-size: 200%;
+     }
+     .ville i{
+         left: 30%;
+     }
+     .ville h2{
+        padding: 1% 0% 1% 20%;
+     }
+     .menu1_header h1 {
+        margin: 2% 0% 0% 32%;
+        font-size: 200%;
+     }
+     .fas.fa-arrow-left{
+         top: 35%;
+     }
+    .reservation p{
+        margin: 0% 1% 0% 4%;
+        font-size: 200%;
+    }
+
+    .restaurants .liste_carte{
+        flex-direction: row;
+        gap: 2%;
+        margin-right: 1%;
+    }
+    .restaurants a{
+        flex-basis: 47%;
+    }
+    .restaurants article{
+        margin: 5% 4% 0% 4%;
+        height: 400px;
+    }
+    .restaurants span{
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    .image_description{
+        margin-top: 5%;
+    }
+    .image_menu img{
+        height: 600px;
+    }
+    .far.fa-heart{
+        margin: -8% 1% 0% 75%;
+    }
+    .fas.fa-heart{
+        margin: -8% 1% 0% 75%;
+    }
+    .menu1_main h2{
+        padding: 0% 1% 0% 36%;
+        font-size: 220%;
+    }
+    .menu1_main .coeur_menu {
+        position: absolute;
+        left: 71%;
+        top: 79%;
+    }
+    .menu_contenu{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-bottom: 5%;
+    }
+    .menu_contenu .options{
+        margin: 1% 1% 2% 4%;
+        width: 28%;
+    }
+    .menu_contenu .les_choix .coût{
+        margin-right: -17%;
+    }
+    .menu_contenu .les_choix .coût .validation{
+        margin-left: 10%;
+    }
+    .menu_contenu .commander{
+        margin: -2% 1% 8% 35%;
+        flex-basis: 70%;
+    }
+    .menu_contenu .click{
+        padding: 2% 10% 2% 10%;
+        font-size: 220%;
+    }
+    footer{
+        padding-left: 35%;
+        font-size: 125%;
+        margin-top: -4%;
+    }
+}
