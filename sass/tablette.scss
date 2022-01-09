@@ -1,0 +1,66 @@
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    header{
+        margin-top: 0%;
+    }
+    .reservation p{
+        margin: 0% 1% 0% 4%;
+    }
+    header.menu1_header h1{
+        margin: 4% 0% 0% 30%;
+        font-size: 300%;
+    }
+    .ville h2{
+        font-size: 220%;
+        margin-left: -10%;
+    }
+    .ville i{
+        font-size: 220%;
+    }
+    .fonctionnement h2{
+        padding-left: 38%;
+    }
+    .fonctionnement li{
+            justify-content: space-between;
+            font-size: 200%;
+    }
+    .fonctionnement li span{
+        padding: 15px;
+        margin-left: 16%;
+    }
+    .restaurants h2{
+        font-size: 45px;
+        padding: 2% 1% 0% 33%; 
+    }
+    .restaurants h3{
+        margin: 6% 1% 5% 4%;
+    }
+    .far.fa-heart{
+        margin: -5% 1% 0% 88%;
+    }
+    .fas.fa-heart{
+        margin: -5% 1% 0% 88%;
+    }
+    .restaurants article{
+        height: 450px;
+    }
+    footer{
+        padding-left: 27%;
+        font-size: 125%; 
+    }
+
+    .menu1_header h1{
+        margin: 4% 0% 0% 34%;
+        font-size: 220%;
+    }
+    .menu_contenu .les_choix .coût{
+        margin-right: -25%;
+    }
+    .menu_contenu .les_choix .coût .prix{
+        margin: -15% 0% -20% -7%;
+    }
+    .menu_contenu .les_choix .coût .validation{
+        height: 122%;
+        width: 81%;
+    }
+}
