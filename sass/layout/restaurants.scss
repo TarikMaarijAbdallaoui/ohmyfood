@@ -56,14 +56,30 @@
     p{
         margin: -4% 1% 3% 4%;
         font-size: 125%;
+        padding-bottom: 1px;
     }
-    .coeur{
+    .far.fa-heart{
         position: absolute;
-        margin: -13% 1% 0% 88%;
+        margin: -8% 1% 0% 88%;
+        font-size: 30px;
     }
-    .coeur:hover{
-        color: red;
+    .fas.fa-heart{
+        position: absolute;
+        margin: -8% 1% 0% 88%;
+        font-size: 30px;
+        color: transparent;
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
     }
+    .fas.fa-heart:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+
+   
     
 
  
