@@ -289,7 +289,7 @@ footer a:hover {
   position: absolute;
   color: black;
   left: 6%;
-  top: 50%;
+  top: 35%;
   font-size: 130%;
 }
 
@@ -366,7 +366,7 @@ footer a:hover {
     opacity: 0;
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-10%);
     opacity: 1;
   }
 }
@@ -397,8 +397,8 @@ footer a:hover {
 .menu_contenu .les_choix .coût {
   display: flex;
   align-items: center;
-  gap: 16%;
-  margin-right: -24%;
+  gap: 31%;
+  margin-right: -20%;
   flex-basis: 30%;
 }
 .menu_contenu .les_choix .coût .prix {
@@ -612,6 +612,7 @@ footer a:hover {
 
   .menu_contenu .les_choix .coût {
     margin-right: -17%;
+    gap: 14%;
   }
 
   .menu_contenu .les_choix .coût .validation {
