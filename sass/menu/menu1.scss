@@ -6,12 +6,12 @@
     h1{
         margin: 4% 0% 0% 30%;
     }
-    }
+}
 .fas.fa-arrow-left{
     position: absolute;
     color: black;
     left: 6%;
-    top: 50%;
+    top: 35%;
     font-size: 130%;
     }
 .image_menu{
@@ -90,7 +90,7 @@
                 opacity: 0;
             }
             100%{
-                transform:translateY(-100%);
+                transform:translateY(-10%);
                 opacity: 1;
             }
         }
@@ -123,8 +123,8 @@
         .coût{
             display: flex;
             align-items: center;
-            gap: 16%;
-            margin-right: -24%;
+            gap: 31%;
+            margin-right: -20%;
             flex-basis: 30%;
 
             .prix{
