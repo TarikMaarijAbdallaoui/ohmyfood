@@ -69,6 +69,7 @@
           }
 
     }
+   
     .les_choix{
         display: flex;
         border: 0px solid transparent;
@@ -84,6 +85,7 @@
         box-shadow: 3px 4px 10px 1px lightgrey;
         animation-name: décalage;
         animation-duration: 3s;
+        animation-fill-mode: both;
         @keyframes décalage {
             0%{
                 transform: translateY(100%);
@@ -94,6 +96,11 @@
                 opacity: 1;
             }
         }
+        @for $i from 1 through 5{
+            &:nth-child(#{$i}) {
+                animation-delay: 500ms * $i;
+            }
+        }
         .détails{
             display: flex;
             flex-direction: column;
@@ -101,7 +108,7 @@
             margin: -3% 1% 1% 1%;
             width: 70%;
 
-            span{
+             span{
                 opacity: 0.9;
                 font-size: 140%;
                 margin: 6% -5% 4% 5%;
@@ -109,7 +116,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            p{
+             p{
                 font-size: 112%;
                 font-weight: lighter;
                 opacity: 0.9;
@@ -150,6 +157,10 @@
         }
     }
     .les_choix:hover{
+        .fa-check{
+            transform: rotate(360deg);
+            transition:transform ease 1s;
+        }
         .détails{
             width: 60%;
         }
